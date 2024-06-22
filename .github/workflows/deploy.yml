@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - main  
 
 jobs:
   deploy:
@@ -11,10 +11,18 @@ jobs:
 
     steps:
     - name: Checkout the repository
-      uses: actions/checkout@v3  # Update to v3 for Node.js 20 support
+      uses: actions/checkout@v3  # Ensure this is the latest version
+
+    - name: Setup Git for Debugging
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+    - name: Display Git Status for Debugging
+      run: git status
 
     - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v4  # Update to v4 for Node.js 20 support
+      uses: peaceiris/actions-gh-pages@v4  # Ensure this is the latest version
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./  # The directory static files (e.g., index.html)
