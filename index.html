@@ -98,6 +98,7 @@
 }
 
 
+
 /* project image zoom effect */
 
 .zoom-effect {
@@ -107,6 +108,24 @@
 
 .zoom-effect:hover {
   transform: scale(1.1);
+}
+.slider-item .img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%; /* Ensure the height covers the entire container */
+}
+
+.hero, .js-fullheight {
+  height: 100vh; /* Ensure the hero section takes full viewport height */
+}
+
+.container {
+  height: 100%; /* Ensure the container takes full height */
+}
+
+.one-third {
+  height: 100%; /* Ensure the one-third column takes full height */
 }
 
 
@@ -228,54 +247,74 @@
 									</div>
 								  </div>
 
-								<div class="skill-mf">
+								  <div class="skill-mf">
 									<p class="title-s">Skills</p>
-									<span>Java, C++, Python</span>
+
+									<!-- Programming Languages -->
+									<span>Programming Languages: Java, C++, Python, JavaScript</span>
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="95" aria-valuemin="0"
-											aria-valuemax="100"></div>
+										<div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
 
-									<span>Data Visualization with Tableau, PowerBI, MySQL, Dynamo DB</span>
+
+									<!-- Front-End Development -->
+									<span>Front-End Development: Flutter, Qt Design Studio, JavaFX, React, Vue.js</span>
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
+										<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
 
-									<span>Git, Docker, RasberryPI, Arduino </span>
+
+									<!-- Back-End Development -->
+									<span>Back-End Development: Node.js</span>
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="95" aria-valuemin="0"
-											aria-valuemax="100"></div>
+										<div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
 
-									<span>React, JavaScript, Node.js</span>
+
+									<!-- Data Analysis & Visualization -->
+									<span>Data Visualization & Analysis: Tableau, Power BI, MySQL, DynamoDB</span>
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									<span>Machine Learning, Embedded System (IoT)</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									<span>Mobile App Development, React Native, Swift</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									<span>AWS, Azure, Cloud Service</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
+										<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
 
-									<span>Operating System (macOS, Windows, Linux)</span>
+
+									<!-- DevOps & Tools -->
+									<span>DevOps & Tools: Git, Docker, Raspberry Pi, Arduino</span>
 									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 98%" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100"></div>
+										<div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+
+
+									<!-- Cloud Services -->
+									<span>Cloud Platforms: AWS, Azure</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+
+
+									<!-- Mobile App Development -->
+									<span>Mobile App Development: React Native, iOS (Swift)</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+
+
+									<!-- Machine Learning & Embedded Systems (IoT) -->
+									<span>Machine Learning & Embedded Systems (IoT)</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+
+
+									<!-- Operating Systems -->
+									<span>Operating Systems: macOS, Windows, Linux</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 98%;" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
 
 								</div>
+
+
 							</div>
 						</div>
 					</div>
@@ -283,27 +322,50 @@
 					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
 						<div class="row justify-content-start pb-3">
 							<div class="col-md-12 heading-section ftco-animate">
-
 								<h1 class="big">About</h1>
 								<h2 class="mb-4">About Me</h2>
-
-								<p>Passionate and results-driven software developer eager to take on a dynamic role in a
-									challenging environment. I am particularly drawn to opportunities in software automation,
-									embedded systems/IoT, cloud computing, and data-driven machine learning projects. With
-									a solid foundation in C++, Python, and Java, I am excited to leverage my skills to contribute
-									to innovative solutions in these domains.</p>
+								<p>
+									I am a passionate and results-driven software developer with a keen interest in pushing the boundaries of technology. With a strong foundation in software automation, embedded systems, IoT, cloud computing, and data-driven machine learning projects, I thrive in dynamic environments that challenge me to innovate.
+								</p>
+								
+								<p>
+									I believe that technology should not only solve problems but also enhance the quality of life. As I explore new opportunities, I am excited to collaborate with like-minded professionals who share my vision for a better, more connected world.
+								</p>
 								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>Profile:</span> <span>ML, Data Science &amp; Analytics</span></li>
-									<li class="d-flex"><span>Domain:</span> <span>Computer Sciences &amp; Software Engineering</span></li>
-									<li class="d-flex"><span>Education:</span> <span>Bachelor of Engineering</span></li>
-									<li class="d-flex"><span>Language:</span> <span>English, Finnish, Bangla, Hindi, Malay</span></li>
-									<li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI, Looker &amp; Tableau</span></li>
-									<li class="d-flex"><span>Other Skills:</span> <span>Web Developement, PySpark, Excel, Git, JIRA,Confluence, Bitbucket, Google Analytics &amp; SEO</span></li>
-									<li class="d-flex"><span>Interest:</span> <span>Traveling, Fishing, Astrophysics</span></li>
-
+									<li class="d-flex"><span>🔍 Profile:</span> <span>Machine Learning, Data Science & Analytics</span></li>
+									<li class="d-flex"><span>🌐 Domain:</span> <span>Computer Sciences & Software Engineering</span></li>
+									<li class="d-flex"><span>🎓 Education:</span> <span>Bachelor of Engineering</span></li>
+									<li class="d-flex"><span>🌍 Languages:</span> <span>English, Finnish, Bangla, Hindi, Malay</span></li>
+									<li class="d-flex"><span>📊 BI Tools:</span> <span>Microsoft Power BI, Looker & Tableau</span></li>
+									<li class="d-flex"><span>🛠️ Other Skills:</span> <span>Web Development, PySpark, Excel, Git, JIRA, Confluence, Bitbucket, Google Analytics & SEO</span></li>
+									<li class="d-flex"><span>🚀 Interests:</span> <span>Traveling, Fishing, Astrophysics</span></li>
 								</ul>
 							</div>
 						</div>
+						<div class="hobbies-section">
+							<h3>Hobbies & Interests</h3>
+							<p>
+								When I'm not immersed in code, you can find me exploring new places, casting a line into serene waters, or gazing up at the stars, fueled by my curiosity for the universe. These passions inspire me to approach my work with creativity and enthusiasm, always eager to learn something new.
+							</p>
+							<ul>
+								<li>🌍 Traveling: I love to discover new cultures and experiences.</li>
+								<li>🎣 Fishing: A peaceful escape that allows me to recharge and reflect.</li>
+								<li>🔭 Astrophysics: My fascination with the cosmos fuels my love for science and technology.</li>
+							</ul>
+						</div>
+						<!-- Social Media Section -->
+    <div class="social-media-section mt-4">
+        <h3>Connect with Me</h3>
+        <ul class="list-unstyled d-flex">
+            <li class="mr-3"><a href="https://www.linkedin.com/in/razibhasan2/" class="btn btn-outline-primary"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            <li class="mr-3"><a href="https://github.com/Razib91lightspeed" class="btn btn-outline-dark"><i class="fab fa-github"></i> GitHub</a></li>
+            <li class="mr-3"><a href="https://twitter.com/@RazibHa28487029" class="btn btn-outline-info"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li><a href="https://www.instagram.com/wonderboy21s?igsh=MWZkN3V3YW51NWxjeg%3D%3D&utm_source=qr" class="btn btn-outline-danger"><i class="fab fa-instagram"></i> Instagram</a></li>
+        </ul>
+    </div>
+					</div>
+
+
 
 
 						<div class="counter-wrap ftco-animate d-flex mt-md-3">
@@ -459,7 +521,7 @@
     					<h2>Bachelor of Engineering</h2>
     					<span class="position">Tampere University of Applied Sciences</span>
 						<p class="mt-4">Major: Software Engineering</p>
-    					<p class="mt-4">Grade: 4.72 / 5</p>
+    					<p class="mt-4">Grade: 4.49 / 5</p>
 						<ul>
 							<li>Programming Languages (C++, Java, JavaScript, Python etc.)</li>
 							<li>Embedded System, IoT</li>
